@@ -1,3 +1,6 @@
+/* =======================
+   General Body & App
+   ======================= */
 body {
     font-family: "Roboto", sans-serif;
     background-color: #e8f5e9; /* Light green background */
@@ -20,6 +23,9 @@ body {
     overflow: hidden;
 }
 
+/* =======================
+   Header
+   ======================= */
 header {
     background-color: #4CAF50; /* Green header */
     padding: 15px 30px;
@@ -38,6 +44,20 @@ header {
     font-size: 0.9em;
 }
 
+#logoutBtn {
+    padding: 10px 15px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#logoutBtn:hover {
+    background-color: #b71c1c;
+}
+
 h1 {
     color: white; /* White text for contrast */
     margin: 0;
@@ -52,6 +72,9 @@ h1 span.logo {
     margin-left: 10px;
 }
 
+/* =======================
+   Controls & Filters
+   ======================= */
 .controls, .filters {
     display: flex;
     padding: 20px 30px;
@@ -85,6 +108,9 @@ h1 span.logo {
     background-color: #388E3C; /* Darker green on hover */
 }
 
+/* =======================
+   Task Lists
+   ======================= */
 .lists {
     padding: 20px 30px;
 }
@@ -165,7 +191,13 @@ h1 span.logo {
     color: white;
 }
 
-/* Smooth Move Animation */
+.delete-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* =======================
+   Animations
+   ======================= */
 .task-exit {
     opacity: 1;
     transform: scale(1);
@@ -188,6 +220,9 @@ h1 span.logo {
     transition: all 0.25s ease;
 }
 
+/* =======================
+   Responsive
+   ======================= */
 @media (max-width: 768px) {
     .controls, .filters {
         flex-direction: column;
@@ -207,4 +242,49 @@ h1 span.logo {
         margin-top: 15px;
         box-sizing: border-box;
     }
+}
+
+/* =======================
+   Auth Pages (Login/Signup)
+   ======================= */
+.auth-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.auth-container input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.auth-container button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+    background-color: #388E3C;
+}
+
+.auth-container a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
 }
